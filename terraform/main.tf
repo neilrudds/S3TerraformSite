@@ -17,7 +17,7 @@ provider "aws" {
   region  = "eu-west-1"
 }
 
-resource "aws_s3_bucket" {
+resource "aws_s3_bucket" "s3Bucket" {
      bucket = "githubactionstfsite"
      acl       = "public-read"
 
