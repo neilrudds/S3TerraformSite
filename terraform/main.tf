@@ -6,7 +6,7 @@ terraform {
   required_version = ">=0.12.9" 
 
    backend "s3" {
-       bucket = "[terraformremotestate01]"
+       bucket = "[terraformremotestate]"
        key    = "[AKIASGRIKHJUIWWN23WG]"
        region = "eu-west-1"
    }
