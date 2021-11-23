@@ -18,7 +18,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "s3Bucket" {
-     bucket = "[githubactionstfsite]"
+     bucket = "githubactionstfsite"
      acl       = "public-read"
 
      policy  = <<EOF
@@ -31,7 +31,7 @@ resource "aws_s3_bucket" "s3Bucket" {
              "s3:GetObject"
           ],
          "effect" : "Allow",
-         "resource" : "arn:aws:s3:::[githubactionstfsite]/*",
+         "resource" : "arn:aws:s3:::githubactionstfsite/*",
          "principal" : "*"
       }
     ]
