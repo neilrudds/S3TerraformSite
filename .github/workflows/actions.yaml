@@ -16,8 +16,6 @@ jobs:
 
     - name: Terraform Init
       uses: hashicorp/terraform-github-actions/init@v0.4.0
-      with:
-        tf_actions_version: 0.12.31
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TF_ACTION_WORKING_DIR: 'terraform'

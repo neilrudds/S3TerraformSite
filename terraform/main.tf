@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = "~>3.66"
+    aws = "~>3.27"
   }
 
   required_version = ">=0.12.9" 
@@ -17,7 +17,7 @@ provider "aws" {
   region  = "eu-west-1"
 }
 
-resource "aws_s3_bucket" "s3Bucket" {
+resource "aws_s3_bucket" {
      bucket = "githubactionstfsite"
      acl       = "public-read"
 
