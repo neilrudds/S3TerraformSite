@@ -32,7 +32,7 @@ resource "aws_s3_bucket" "s3Bucket" {
         "s3:GetObject"
       ],
       "Effect": "Allow",
-      "Resource": "arn:aws:s3:::githubactionstfsite",
+      "Resource": "arn:aws:s3:::githubactionstfsite/*",
       "Principal": "*"
     }
   ]
