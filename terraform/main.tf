@@ -18,7 +18,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "s3Bucket" {
-     bucket = "my_website_bucket"
+     bucket = "mywebsite231121"
      acl       = "public-read"
 
      policy  = <<EOF
@@ -31,7 +31,7 @@ resource "aws_s3_bucket" "s3Bucket" {
         "s3:GetObject"
       ],
       "Effect": "Allow",
-      "Resource": "arn:aws:s3:::my_website_bucket/*",
+      "Resource": "arn:aws:s3:::mywebsite231121/*",
       "Principal": "*"
     }
   ]
