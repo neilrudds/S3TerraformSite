@@ -31,7 +31,7 @@ resource "aws_s3_bucket" "s3Bucket" {
              "s3:GetObject"
           ],
          "effect" : "Allow",
-         "resource" : "arn:aws:s3:::terraformremotestate01",
+         "resource" : "arn:aws:s3:::githubactionstfsite",
          "principal" : "*"
       }
     ]
