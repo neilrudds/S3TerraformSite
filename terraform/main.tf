@@ -7,7 +7,7 @@ terraform {
 
    backend "s3" {
        bucket = "terraformremotestate01"
-       key    = "AKIASGRIKHJUIWWN23WG"
+       key    = "my-s3-website"
        region = "eu-west-1"
    }
 }
