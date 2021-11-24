@@ -18,21 +18,20 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "s3Bucket" {
-     bucket = "githubactionstfsite"
+     bucket = "my_website_bucket"
      acl       = "public-read"
 
      policy  = <<EOF
 {
-  "Id": "Policy1637744178392",
+  "Id": "MakePublic",
   "Version": "2012-10-17",
   "Statement": [
     {
-      "Sid": "Stmt1637744160936",
       "Action": [
         "s3:GetObject"
       ],
       "Effect": "Allow",
-      "Resource": "arn:aws:s3:::githubactionstfsite/*",
+      "Resource": "arn:aws:s3:::my_website_bucket/*",
       "Principal": "*"
     }
   ]
