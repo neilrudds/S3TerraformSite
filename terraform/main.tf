@@ -23,19 +23,20 @@ resource "aws_s3_bucket" "s3Bucket" {
 
      policy  = <<EOF
 {
-     "id" : "MakePublic",
-   "version" : "2012-10-17",
-   "statement" : [
-      {
-         "action" : [
-             "s3:GetObject"
-          ],
-         "effect" : "Allow",
-         "resource" : "arn:aws:s3:::githubactionstfsite",
-         "principal" : "*"
-      }
-    ]
-  }
+  "Id": "Policy1637744178392",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1637744160936",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::githubactionstfsite",
+      "Principal": "*"
+    }
+  ]
+}
 EOF
 
    website {
